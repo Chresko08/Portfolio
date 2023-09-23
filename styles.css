@@ -1,0 +1,102 @@
+/* Add your CSS styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+}
+
+/* Style the navigation links (navbar items) */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display:inline;
+    margin: 0px 5px;
+}
+
+/* Navbar item hover effect */
+nav a {
+    color: #fff; /* Color for normal state */
+    text-decoration: none;
+    transition: color 0.5s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #00aaff; /* Color for hover state */
+}
+
+
+/* Animate header text */
+header h1 {
+    font-size: 36px;
+    animation: textScale 1s ease-in-out infinite alternate;
+}
+header p {
+    font-size: 16px;
+    animation: textScale 1s ease-in-out infinite alternate;
+}
+
+@keyframes textScale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+.fade-in {
+     animation: fadeIn 5s; 
+    } 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
