@@ -72,28 +72,16 @@ nav a:hover {
     color: #00aaff; /* Color for hover state */
 }
 
-
 /* Animate header text */
 header h1 {
     font-size: 36px;
-    animation: textScale 1s ease-in-out infinite alternate;
 }
 header p {
     font-size: 16px;
-    animation: textScale 1s ease-in-out infinite alternate;
-}
-
-@keyframes textScale {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.03);
-    }
 }
 
 .fade-in {
-     animation: fadeIn 5s; 
+     animation: fadeIn 3s; 
     } 
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -106,4 +94,23 @@ header p {
     border-radius: 50%; /* This creates the circular shape */
     object-fit: cover; /* Maintain the aspect ratio and fill the circle */
     overflow: hidden; /* Hide anything outside the circle */
+}
+
+#contact {
+    text-align: center; /* Center-align the content horizontally */
+    padding: 10px;
+    animation: textScale 1s ease-in-out infinite alternate;
+}
+
+#contact a {
+    margin: 0 10px; /* Add some space between the icons */
+}
+
+@keyframes textScale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
